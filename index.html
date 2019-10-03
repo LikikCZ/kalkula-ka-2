@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulačka</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="abc()">
+    <p id="display2"></p><p id="display3"></p>
+    <h1 id="display">0</h1>
+    <table>
+        <tr>
+            <td>
+                <p onclick="cisla(this.innerHTML)">%</p>
+            </td>
+            <td>
+                <p onclick="cisla(this.innerHTML)">√</p>
+            </td>
+            <td>
+                <p onclick="cisla(this.innerHTML)">x²</p>
+            </td>
+            <td>
+                <p onclick="cisla(this.innerHTML)">1/x</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p onclick="cisla(this.innerHTML)">CE</p>
+            </td>
+            <td>
+                <p onclick="cisla(this.innerHTML)">C</p>
+            </td>
+            <td>
+                <p onclick="cisla(this.innerHTML)">&larr;</p>
+            </td>
+            <td>
+                <p onclick="deleno()">÷</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p onclick="cisla(this.innerHTML)">7</p>
+            </td>
+            <td>
+                <p onclick="cisla(this.innerHTML)">8</p>
+            </td>
+            <td>
+                <p onclick="cisla(this.innerHTML)">9</p>
+            </td>
+            <td>
+                <p onclick="krat()">×</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p onclick="cisla(this.innerHTML)">4</p>
+            </td>
+            <td>
+                <p onclick="cisla(this.innerHTML)">5</p>
+            </td>
+            <td>
+                <p onclick="cisla(this.innerHTML)">6</p>
+            </td>
+            <td>
+                <p onclick="minus()">-</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p onclick="cisla(this.innerHTML)">1</p>
+            </td>
+            <td>
+                <p onclick="cisla(this.innerHTML)">2</p>
+            </td>
+            <td>
+                <p onclick="cisla(this.innerHTML)">3</p>
+            </td>
+            <td>
+                <p onclick="plus()">+</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p onclick="negace()">±</p>
+            </td>
+            <td>
+                <p onclick="cisla(this.innerHTML)">0</p>
+            </td>
+            <td>
+                <p onclick="desCarka()">,</p>
+            </td>
+            <td>
+                <p onclick="rovnase()">=</p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
