@@ -1,6 +1,7 @@
 let pedchoziCislo;
 let prvniCislo;
 let operace;
+let operativ;
 
 let dis;
 let dis2;
@@ -43,6 +44,17 @@ function desCarka()
     else {
         dis.innerHTML = dis.innerHTML + ".";
     }
+}
+
+function mocnina()
+{
+    dis3.innerHTML = "";
+    pedchoziCislo = Number(dis.innerHTML);
+    vykonOperace();
+    prvniCislo = Number(dis.innerHTML) * Number(dis.innerHTML);
+    operativ = "²";
+    dis.innerHTML = 0;
+    konecOperace();
 }
 
 function minus()
@@ -96,7 +108,7 @@ function rovnase()
     prvniCislo = Number(dis.innerHTML);
     operace = "";
     dis.innerHTML = 0;
-    konecOperace();
+    konecOperace()
     konecOperaceKonec();
 }
 
@@ -125,4 +137,14 @@ function konecOperaceKonec()
 {   
     dis3.innerHTML = dis2.innerHTML + " = " + prvniCislo; 
     dis2.innerHTML = "";
+}
+
+function clearAll()
+{
+    dis.innerHTML = "0";
+    dis2.innerHTML = "";
+    dis3.innerHTML = "";
+    pedchoziCislo = "";
+    prvniCislo = "";
+    operace = "";
 }
