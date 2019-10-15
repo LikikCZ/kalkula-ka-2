@@ -1,4 +1,3 @@
-
 let pedchoziCislo;
 let prvniCislo;
 let operace;
@@ -66,7 +65,7 @@ function IDKHowToCallIt()
 
 function procento() 
 {
-    dis.innerHTML = Number(dis.innerHTML) / 100;    
+    dis.innerHTML = Number(prvniCislo) * Number(dis.innerHTML) / 100;    
 }
 
 function minus()
