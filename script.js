@@ -1,3 +1,4 @@
+
 let pedchoziCislo;
 let prvniCislo;
 let operace;
@@ -46,15 +47,14 @@ function desCarka()
     }
 }
 
+function odmocnina()
+{
+    dis.innerHTML = Math.sqrt(Number(dis.innerHTML));
+}
+
 function mocnina()
 {
-    dis3.innerHTML = "";
-    pedchoziCislo = Number(dis.innerHTML);
-    vykonOperace();
-    prvniCislo = Number(dis.innerHTML) * Number(dis.innerHTML);
-    operativ = "²";
-    dis.innerHTML = 0;
-    konecOperace();
+    dis.innerHTML = Number(dis.innerHTML) * Number(dis.innerHTML);
 }
 
 function minus()
@@ -147,4 +147,9 @@ function clearAll()
     pedchoziCislo = "";
     prvniCislo = "";
     operace = "";
+}
+
+function IDKHowToCallIt()
+{
+    dis.innerHTML = 1 / Number(dis.innerHTML);
 }

@@ -2,3 +2,15 @@ td {
     text-align: center;
     width: 40px;
 }
+
+p:hover {
+    background-color: gray;
+}
+
+p {
+    background-color: lightgray;
+}
+
+body {
+    background-color: whitesmoke;
+}
