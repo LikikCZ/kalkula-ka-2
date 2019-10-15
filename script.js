@@ -16,7 +16,9 @@ function abc()
 
 function cisla(x)
 {
-    if (Number(dis.innerHTML) == 0)
+    if (dis.innerHTML.includes(".",1))
+    dis.innerHTML = dis.innerHTML + x;
+    else if (Number(dis.innerHTML) == 0)
     dis.innerHTML = x;
     else
     dis.innerHTML = dis.innerHTML + x;
@@ -55,6 +57,16 @@ function odmocnina()
 function mocnina()
 {
     dis.innerHTML = Number(dis.innerHTML) * Number(dis.innerHTML);
+}
+
+function IDKHowToCallIt()
+{
+    dis.innerHTML = 1 / Number(dis.innerHTML);
+}
+
+function procento() 
+{
+    dis.innerHTML = Number(dis.innerHTML) / 100;    
 }
 
 function minus()
@@ -149,7 +161,14 @@ function clearAll()
     operace = "";
 }
 
-function IDKHowToCallIt()
+function clearDisplay()
+{    
+    dis.innerHTML = "0";
+}
+
+function backspace()
 {
-    dis.innerHTML = 1 / Number(dis.innerHTML);
+    dis.innerHTML = dis.innerHTML.substring(0, dis.innerHTML.length - 1);
+    if (dis.innerHTML == "")
+    dis.innerHTML = "0";
 }
