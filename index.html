@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Kalkulačka</title>
     <script src="script.js"></script>
+    <script src="ajax.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -42,13 +43,13 @@
         </tr>
         <tr>
             <td>
-                <p onclick="cisla(this.innerHTML)">7</p>
+                <p onclick="cisla(this.innerHTML),odeslatInfo(this.innerHTML)">7</p>
             </td>
             <td>
-                <p onclick="cisla(this.innerHTML)">8</p>
+                <p onclick="cisla(this.innerHTML),odeslatInfo(this.innerHTML)">8</p>
             </td>
             <td>
-                <p onclick="cisla(this.innerHTML)">9</p>
+                <p onclick="cisla(this.innerHTML),odeslatInfo(this.innerHTML)">9</p>
             </td>
             <td>
                 <p onclick="krat()">×</p>
@@ -56,13 +57,13 @@
         </tr>
         <tr>
             <td>
-                <p onclick="cisla(this.innerHTML)">4</p>
+                <p onclick="cisla(this.innerHTML),odeslatInfo(this.innerHTML)">4</p>
             </td>
             <td>
-                <p onclick="cisla(this.innerHTML)">5</p>
+                <p onclick="cisla(this.innerHTML),odeslatInfo(this.innerHTML)">5</p>
             </td>
             <td>
-                <p onclick="cisla(this.innerHTML)">6</p>
+                <p onclick="cisla(this.innerHTML),odeslatInfo(this.innerHTML)">6</p>
             </td>
             <td>
                 <p onclick="minus()">-</p>
@@ -70,13 +71,13 @@
         </tr>
         <tr>
             <td>
-                <p onclick="cisla(this.innerHTML)">1</p>
+                <p onclick="cisla(this.innerHTML),odeslatInfo(this.innerHTML)">1</p>
             </td>
             <td>
-                <p onclick="cisla(this.innerHTML)">2</p>
+                <p onclick="cisla(this.innerHTML),odeslatInfo(this.innerHTML)">2</p>
             </td>
             <td>
-                <p onclick="cisla(this.innerHTML)">3</p>
+                <p onclick="cisla(this.innerHTML),odeslatInfo(this.innerHTML)">3</p>
             </td>
             <td>
                 <p onclick="plus()">+</p>
@@ -87,7 +88,7 @@
                 <p onclick="negace()">±</p>
             </td>
             <td>
-                <p onclick="cisla(this.innerHTML)">0</p>
+                <p onclick="cisla(this.innerHTML),odeslatInfo(this.innerHTML)">0</p>
             </td>
             <td>
                 <p onclick="desCarka()">,</p>
